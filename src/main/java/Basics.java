@@ -93,7 +93,6 @@ public class Basics {
         for (int i = 10; i >= 0; i--){
             System.out.println("Current count: " + i);
         }
-
     }
 
     /**
@@ -128,15 +127,15 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        String[] splitStr = to_split.split("");
+        String[] splitStr = to_split.split("\\s+");
         // Fill in the rest of the body here
-        ret.append(splitStr[0]);
-        ret.append(splitStr[1]);
-        ret.append(splitStr[2]);
-        ret.append(splitStr[3]);
-        ret.append(splitStr[4]);
-        ret.append(splitStr[5]);
-        ret.append(splitStr[6]);
+        ret.append(splitStr[0].charAt(0));
+        ret.append(splitStr[1].charAt(0));
+        ret.append(splitStr[2].charAt(0));
+        ret.append(splitStr[3].charAt(0));
+        ret.append(splitStr[4].charAt(0));
+        ret.append(splitStr[5].charAt(0));
+        ret.append(splitStr[6].charAt(0));
         return ret.toString();
     }
 
