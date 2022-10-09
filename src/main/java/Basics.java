@@ -152,7 +152,7 @@ public class Basics {
      * @param arr    An array of integers
      * @return       The sum of all integers at odd indices in arr
      */
-    public static int oddSum(int[] arr) {
+    public static int oddSum(int[] arr ) {
         int current_sum = 0;
 
         /* TODO (Task 5): Complete this method body using a for-loop.
@@ -161,13 +161,11 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-        for (int i = 1; i <= arr.length; i+=2){
-            current_sum = current_sum + i;
-        }
+            for (int i = 1; i <= arr.length; i += 2) {
+                current_sum = current_sum + arr[i];
+            }
         return current_sum;
     }
-
-
     /*
      * TODO (Task 6): Submit the changes you made on GitHub!
      *                When you submit it, go to the 'Actions' tab. You should
